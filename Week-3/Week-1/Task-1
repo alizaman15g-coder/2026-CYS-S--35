@@ -1,0 +1,7 @@
+# Task 1:Print Your Information 
+
+print("Name:Ali Zaman") 
+
+print("Department: Computer Engineering") 
+
+print("University: UET Lahore") 

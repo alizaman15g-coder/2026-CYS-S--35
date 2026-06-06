@@ -1,0 +1,39 @@
+#RANDOM PASSWORD  
+import random
+import string 
+
+length = int(input("Enter password length: ")) 
+
+use_upper = input("Include uppercase letters? (y/n): ") 
+
+use_lower=input("Include lowercase letters? (y/n): ") 
+
+use_digits=input("Include digits? (y/n): ") 
+
+use_special=input("Include special characters? (y/n): ") 
+
+characters = "" 
+
+if use_upper =='y':  
+
+    characters += string.ascii_uppercase 
+
+if use_lower =='y':    
+
+    characters += string.ascii_lowercase 
+
+if use_digits =='y':  
+
+    characters += string.digits 
+
+if use_special =='y':  
+
+    characters += string.punctuation 
+            
+    password= "" 
+
+    for i in range(length):  
+
+     password+=random.choice(characters) 
+    
+print("Generated Password: ",password) 

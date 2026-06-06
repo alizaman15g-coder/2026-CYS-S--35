@@ -1,0 +1,28 @@
+#   Task 3:Sum of Prime Numbers in a Range
+
+start =int(input("Enter starting number: ")) 
+
+end=int(input("Enter ending number: ")) 
+
+prime_sum = 0 
+
+print('Prime numbers are: ') 
+
+for num in range(start,end + 1):     
+
+    if num > 1:  
+        is_prime=True         
+
+        for i in range(2,int(num/2)+1):             
+
+            if num % i==0:  
+
+                is_prime=False                 
+                break         
+
+        if is_prime:             
+
+            print(num)             
+
+            prime_sum+=num 
+print("Sum of prime numbers: ",prime_sum)  

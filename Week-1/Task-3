@@ -1,0 +1,9 @@
+#Task 3: Format Output 
+
+#Name: Ali 
+
+#Age: 20 
+
+#City: Chishtian 
+
+print("Name: Ali\nAge: 20\nCity: Chishtian") 

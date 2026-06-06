@@ -1,0 +1,16 @@
+# Decimal equivalent of binary number
+
+binary = input("Enter a Binary Number: ")
+if all(d in '01'for d in binary):  
+
+ decimal=0  
+ power=0 
+
+for digit in reversed(binary):  
+
+        decimal+= int(digit) * (2**power) 
+        power+=1     
+        print("Decimal Equivalent is:",decimal) 
+else:  
+
+   print("Invalid binary number !")  

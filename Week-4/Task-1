@@ -1,0 +1,8 @@
+# Function definition
+def greet():
+ print("Welcome to Python Programming") 
+
+# Main program 
+greet() 
+
+greet() 
